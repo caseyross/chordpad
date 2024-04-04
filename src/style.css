@@ -1,0 +1,65 @@
+@import 'assets.css';
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  touch-action: none;
+}
+
+body {
+  align-items: center;
+  background: #333;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  font-family: 'GT Maru';
+  font-weight: 900;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 3vmin;
+  max-width: 100vw;
+}
+
+header {
+  background: gray;
+  height: 20vmin;
+}
+
+output {
+  background: gray;
+  height: 20vmin;
+}
+
+menu {
+  background: white;
+  display: grid;
+  grid-template: repeat(5, 23vmin) / repeat(4, 23vmin);
+  padding: 4vmin;
+  place-content: center;
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: 1px solid;
+  border-radius: 255px;
+  cursor: pointer;
+}
+button:hover {
+  background: lightgoldenrodyellow;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
