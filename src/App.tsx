@@ -1,5 +1,13 @@
 import Button from './Button.tsx'
-import buttons from './defs/buttons.ts'
+import buttons, { ButtonID } from './defs/buttons.ts'
+
+function onPress(id: ButtonID) {
+
+}
+
+function onRelease(id: ButtonID) {
+
+}
 
 function App() {
   return (
@@ -12,7 +20,7 @@ function App() {
 			</output>
 			<menu>
 				{Object.values(buttons).map(definition =>
-					<Button definition={definition} key={definition.id} />)
+					<Button definition={definition} key={definition.id} onPress={onPress} onRelease={onRelease} />)
 				}
 			</menu>
 		</>
